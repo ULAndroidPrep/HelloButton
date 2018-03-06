@@ -9,12 +9,14 @@
     tools:context="edu.rosehulman.fisher.hellobutton.MainActivity">
 
     <Button
+        android:id="@+id/press_me_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_text"
         android:layout_margin="18dp"/>
+
     <TextView
-        android:id="@+id/myTextView"
+        android:id="@+id/message_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/message_start"
