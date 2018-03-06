@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onClick(View view) {
         count++;
-        textView.setText(getResources().getQuantityString(R.plurals.message_format, count, count));
+        String s = getResources().getQuantityString(R.plurals.message_format, count, count)
+        textView.setText(s);
       }
     });
   }
