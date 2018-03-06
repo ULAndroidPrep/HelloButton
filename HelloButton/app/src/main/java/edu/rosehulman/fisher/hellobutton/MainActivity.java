@@ -1,5 +1,6 @@
 package edu.rosehulman.fisher.hellobutton;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,8 +25,15 @@ public class MainActivity extends AppCompatActivity {
       @Override
       public void onClick(View view) {
         count++;
-        String s = getResources().getQuantityString(R.plurals.message_format, count, count)
+        String s = getResources().getQuantityString(R.plurals.message_format, count, count);
         textView.setText(s);
+        if (count > 10) {
+// To demo getting color resources
+//   textView.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.background));
+
+          // To do it the easy way!!!
+          textView.setVisibility(View.INVISIBLE);
+        }
       }
     });
   }
