@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         String s = getResources().getQuantityString(R.plurals.message_format, count, count);
         textView.setText(s);
         if (count > 10) {
-// To demo getting color resources
-//   textView.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.background));
+          // To demo getting color resources
+          // textView.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.background));
 
           // To do it the easy way!!!
           textView.setVisibility(View.INVISIBLE);
